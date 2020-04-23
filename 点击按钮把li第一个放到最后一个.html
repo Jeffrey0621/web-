@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title></title>
+    <script src="http://code.jquery.com/jquery-latest.js"></script>
+ 
+    <script type="text/javascript">
+        function switchLi() {
+            //$('ul li:eq(0)')选择器，选择ul标签下的li标签下的第一个
+            $('ul').append($('ul li:eq(0)'));
+        }
+    </script>
+</head>
+<body>
+ 
+<ul>
+    <li>1</li>
+    <li>2</li>
+    <li>3</li>
+    <li>4</li>
+    <li>5</li>
+    <li>6</li>
+</ul>
+<input type="button" value="点击属" onclick="switchLi()"/>
+</body>
+</html>
